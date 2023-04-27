@@ -25,12 +25,13 @@ Users should be able to:
 - **Bonus**: Complete the challenge with just HTML and CSS
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/72587880/234886766-87fd758a-9147-4aba-a6d8-5b9af460c983.png)
 
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/pricing-component-toggle)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://strong-jelly-0f0f5b.netlify.app/)
 
 ## My process
 
