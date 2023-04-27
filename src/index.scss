@@ -1,3 +1,9 @@
+@mixin desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
 :root {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -19,5 +25,15 @@ h1, p, h2, h3 {
 }
 
 body {
-  background-color: hsl(240, 78%, 98%);
+  background: hsl(240, 78%, 98%) url(/bg-top.svg) top -45px left 189px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: top -45px left 189px;  
+
+  @include desktop {
+    background: url(/bg-top.svg) top right , url(/bg-bottom.svg) bottom left;
+    background-repeat: no-repeat;
+    background-color: hsl(240, 78%, 98%);
+  }
 }

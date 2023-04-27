@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.scss'
 
 const cards = [
@@ -63,6 +63,19 @@ function App() {
   function handleToggle() {
     setTimePeriod(timePeriod === "annually" ? "monthly" : "annually")
   }
+
+  // Allows user to use arrow keys to toggle between monthly and annually
+  useEffect(() => {
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+          setTimePeriod("monthly")
+        } else if (e.key === 'ArrowLeft') {
+          setTimePeriod("annually")
+        }
+      }
+    )
+  }, [timePeriod])
+
 
   return (
     <div className='app'>
